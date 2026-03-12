@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лабораторна робота 4: Вступ до JavaScript</title>
+</head>
+<body>
+
+    <h1>Лабораторна робота 4: Вступ до JavaScript</h1>
+
+    <script>
+        // Завдання 1: Привітання користувача
+        let userName = prompt("Введіть своє ім'я:");
+
+        alert("Привіт, " + userName + "! Радий тебе бачити!");
+        console.log(`Привіт, ${userName}! Радий тебе бачити!`);
+        
+
+        // Завдання 2: Проста арифметика
+        let number = prompt("Введіть два числа:").split(" ");
+
+        let a = number[0];
+        let b = number[1];
+        let difference = a * b;
+        let fraction = a / b;
+        alert(`Результат множення: ${difference} \nРезультат ділення: ${fraction}`);
+        console.log(a, b);
+
+        // Завдання 3: Вік користувача
+        let userYear = prompt("Ваш рік народження:");
+        const currentYear = 2026;
+        const adminAge = 19;
+        let userInfo = " ";
+
+        let userAge = currentYear  - Number(userYear);
+        let dif = Math.abs(adminAge - userAge);
+
+        if (userAge > adminAge) {
+            userInfo = "старший";
+        } else if (userAge < adminAge) {
+            userInfo = "молодший";
+        } else {
+            userInfo = "того ж віку, що й ви";
+        }
+
+        alert(`Поточний вік користвувача ${userAge} \nПовідомлення користувач ${userInfo} на ${dif} років`);
+    </script>
+
+</body>
+</html>
