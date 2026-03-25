@@ -1,0 +1,34 @@
+header {
+    text-align: center;
+    margin: 15px;
+    padding: 15px;
+    background-color: #e2e6e0;
+}
+
+h2 {
+    margin: 15px;
+}
+
+button {
+    padding: 15px;
+    margin-left: 15px;
+    border-radius: 5px;
+    border: 1px solid #333;
+}
+
+p {
+    margin: 15px;
+}
+
+.element {
+    padding: 15px;
+    border: 1px solid #333;
+    margin: 15px;
+}
+
+footer {
+    text-align: center;
+    margin: 15px;
+    padding: 15px;
+    background-color: #e2e6e0;
+}
