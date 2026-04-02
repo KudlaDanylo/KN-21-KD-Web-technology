@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="uk">
+    <head>
+        <title>Лабораторна робота №6</title>
+        <link rel="stylesheet" href="styles.css">
+        <script src="script.js" defer></script>
+    </head>
+    <body>
+        <form id="myForm">
+            <h2>Форма реєстрації</h2>
+            <div class="input-group">
+                <label id="name">Ім'я:</label>
+                <input type="text" id="userName" class="height">
+                <div id="nameError" class="error-message"></div>
+            </div>
+
+            <div class="input-group">
+                <label id="email">Пошта:</label>
+                <input type="email" id="emailUser" class="height">
+                <div id="emailError" class="error-message"></div>
+            </div>
+            
+            <div class="input-group">
+                <label id="password">Пароль:</label>
+                <input type="password" id="passwordUser" class="height">
+                <div id="passwordError" class="error-message"></div>
+            </div>
+            
+            <div class="input-group">
+                <label id="repet-password">Повторіть пароль:</label>
+                <input type="password" id="repetPasswordUser" class="height">
+                <div id="repetPasswordError" class="error-message"></div>
+            </div>
+
+            <div class="input-group">
+                <label id="age">Вік:</label>
+                <input type="number" id="number" class="height" min="1">
+                <div id="ageError" class="error-message"></div>
+            </div>
+
+            <div class="input-group">
+                <label id="group_student">Група студентів:</label>
+                <select id="group" class="height">
+                    <option value=""selected disabled hidden>Виберіть групу</option>
+                    <option value="AKT-12">AKT-12</option>
+                    <option value="AKT-14">AKT-14</option>
+                    <option value="AKT-34">AKT-34</option>
+                    <option value="AKT-44">AKT-44</option>
+                    <option value="IT-12">IT-12</option>
+                    <option value="IT-22">IT-22</option>
+                    <option value="IT-32">IT-32</option>
+                    <option value="KH-13">KH-13</option>
+                    <option value="KH-21">KH-21</option>
+                    <option value="KH-34">KH-34</option>
+                </select>
+                <div id="groupError" class="error-message"></div>
+            </div>
+
+            <div class="input-group">
+                <button type="submit" id="button" class="button-style">Зареєструватися</button>
+            </div>
+        </form>
+        
+    </body>
+</html>
