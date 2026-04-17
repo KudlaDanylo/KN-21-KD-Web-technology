@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Лабораторна робота №8</title>
+        <link rel="stylesheet" href="styles.css">
+        <script src="script.js" defer></script>
+    </head>
+    <body>
+        <h2>Список справ</h2>
+        <table class="styled-table">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>title</th>
+                </tr>
+            </thead>
+            <tbody id="usersTable"></tbody>
+        </table>
+        <div class="conteiner-button">
+            <button id="buttonUpdate" class="button-style">Оновити</button>
+        </div>
+        <hr>
+        <h4>Додати нове завдання</h4>
+        <div class="box">
+            <form id="userForm">
+                <div class="input-group">
+                    <label id="name">Завдання:</label>
+                    <input type="text" id="userTask" class="height" required placeholder="Введіть завдання">
+                </div>
+
+                <div class="conteiner-button">
+                    <button type="submit" id="button" class="button-style">Додати завдання</button>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
