@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Лабораторна робота 9</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="conteiner">
+        <h2>To-Do List</h2>
+        <form id="taskForm" >
+            <input type="text" id="taskInput" class="height" required placeholder="Введіть завдання">
+            <button type="submit" id="buttonAdd" class="height">+ Додати</button>
+        </form>
+
+        <div>
+            <button id="sortDateBtn" class="button-style">Сортування за датою</button>
+            <button id="btnCompleted" class="button-style">Показати виконані</button>
+            <button id="btnUncompleted" class="button-style">Показати не виконані</button>
+            <button id="btnAll" class="button-style">Показати всі</button>
+        </div>
+
+        <ul id="taskList" class="taskList"></ul>
+    </div>  
+</body>
+</html>
