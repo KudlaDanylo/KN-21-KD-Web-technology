@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сайт-візитка</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Данило Кудла</h1>
+        <p>Моя професія: Web-розробник</p>
+        <nav>
+            <a href="#about">Про мене</a>
+            <a href="#skills">Навички</a>
+            <a href="#portfolio">Поточний проєкт</a>
+            <a href="#contact">Контакти</a>
+            <label class="theme-switch" for="theme-checkbox">
+                <input type="checkbox" id="theme-checkbox">
+                <span class="slider"></span>
+            </label>
+        </nav>
+    </header>
+
+    <main>
+        <section id="about" class="container">
+            <h2>Про мене</h2>
+            <p>Я студент, який вивчає фронтенд розробку. Цей сайт створено як частину лабораторної роботи.</p>
+        </section>
+
+        <section id="skills" class="container">
+            <h2>Мої навички</h2>
+            <ul>
+                <li>
+                    <span>Web Development</span>
+                    <p>Базово володію <strong>HTML, CSS та JavaScript</strong>. Це дає мені можливість створювати вебсторінки, реалізовуючи їхню повну кастомізацію та логіку взаємодії.</p>
+                </li>
+
+                <li>
+                    <span>Python Development</span>
+                    <p>Розробив проєкт <strong>Maze Game</strong>, у якому втілено принципи ООП. Для логіки <strong>NPC</strong> реалізував алгоритм пошуку в ширину, а для процедурної генерації унікальних карт використав алгоритм <strong>пошуку в ширину (BFS)</strong>.</p>
+                </li>
+
+                <li>
+                    <span>Embedded Systems (Arduino)</span>
+                    <p>Маю досвід програмування мікроконтролерів на <strong>C++</strong>. Реалізовував роботу з різними датчиками: від базових світлодіодів до сенсорів вологості та температури.</p>
+                </li>
+
+                <li>
+                    <span>Mobile Development (Android Studio)</span>
+                    <p>Створив мобільний застосунок на <strong>Java</strong> з функціональною системою переходів між вікнами. Реалізував логічний UI-дизайн, що забезпечує зручну взаємодію користувача з додатком.</p>
+                </li>
+            </ul>
+                    
+        </section>
+
+        <section id="portfolio" class="container">
+            <h2>Поточний проєкт</h2>
+            <div class="project-card">
+                <h3>Дистанційно керований робот на гусеничному ході</h3>
+                <p>Наразі я активно розробляю власного дистанційно керованого робота. Основою системи керування виступає мікроконтролер <strong>Arduino Pro Mini</strong>. Для забезпечення надійного радіозв'язку з низькою затримкою та великим радіусом дії я використовую приймач <strong>ELRS (ExpressLRS) на 2.4 ГГц</strong>. Для забезпечення ходу роботу використовуються модифіковані сервоприводи, що дозволяють обертатися на 360 градусів.</p>
+            </div>
+            <img src="image/робот.jpg" alt="роботизована машина">
+        </section>
+
+        <section id="contact" class="container">
+            <h2>Зв'язатися зі мною</h2>
+            <form id="contact-form">
+                <input type="text" id="name" placeholder="Введіть ім'я" required>
+                <input type="email" id="email" placeholder="Ваш email" required>
+                <textarea id="message" placeholder="Ваше повідомлення" required></textarea>
+                <button type="submit">Надіслати</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Данило Кудла. Всі права захищені.</p>
+    </footer>
+</body>
+</html>
